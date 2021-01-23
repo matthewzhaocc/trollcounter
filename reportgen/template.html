@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <title>Rickrolled as of {{ date }}</title>
+    <table style="text-align:center;">
+            <tr>
+                <th>Phone Number</th>
+                <th>Times Rickrolled</th>
+            </tr>
+            {% for loser in losers %}
+            <tr>
+                <th>{{ loser.phonenumber }}</th>
+                <th>{{ loser.count }} </th>
+            </tr>
+            {% endfor %}
+    </table>
+</html>
